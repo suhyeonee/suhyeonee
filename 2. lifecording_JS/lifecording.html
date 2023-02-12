@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body style=color:violet;>
+
+    
+        <div class="lifecording15">
+            <input type="button" value="hi" onclick="alert>('this is alert')">
+            <input type="text" onkeydown    ="alert('key down')">
+    
+            <h1>이것은h1 그냥</h1>
+            <h2 style="background-color: coral; color: navy;"> h2백그라운드칼라, 아래는 button </h2>
+
+            <input type="button" value="day" onclick="
+            document.querySelector('body').style.backgroundColor = 'lightyellow';
+            document.querySelector('body').style.color = 'black';
+            ">
+            <input type="button" value="night" onclick="
+            document.querySelector('body').style.backgroundColor = 'navy';
+            document.querySelector('body').style.color = 'green';
+            ">
+
+            <h1>Comparison operator & Boolean</h1>
+            <h1>===</h1>
+            <h3>1===1</h3>
+            <script>
+                document.write(1===1);
+            </script>
+
+            <h3>1===2</h3>
+            <script>
+                document.write(1===2);
+            </script>  
+        </div>
+
+        <div class="lifecording18" style="color: black;">
+            <h1 style="background-color: aqua; color: black;" >Conditional Statements</h1>
+            
+            <!-- 야간모드 원버튼 전환 -->
+            <input id="night_day" type="button" value="night" onclick="
+                <!-- 나이트 버튼의 현재 벨류값이 나이트 라면, 나이트 버튼을 눌렀을 때 이 코드들이 실행 -->
+                // 현재 벨류값의 상태를 알아내는걸 if()안에 써야지\
+                var target = document.querySelector('body');
+                if(this.value === 'night')
+                {
+                target.style.backgroundColor = 'black';
+                target.style.color = 'white';
+                this.value = 'day';
+                }
+                else{
+                target.style.backgroundColor = 'white';
+                target.style.color = 'black';    
+                document.querySelector('#night_day').value = 'night'; 
+                }
+            ">
+
+        </div>
+
+        <div class="lifecording19" style="color:black">
+                       
+
+        
+        </div>
+
+    </body>
+</html>

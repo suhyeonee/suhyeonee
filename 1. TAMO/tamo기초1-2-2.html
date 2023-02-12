@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>    </head>
+    <body>
+        <style> 
+        *{
+            border-collapse: collapse;
+            margin: 0%;
+            padding: 0%;
+            text-decoration: none;
+            color: black;
+            list-style: none;
+        }
+
+        div > span {
+            display: block;
+            border: 1px solid wheat;
+            background-color: pink;
+        }
+
+        .flexable{
+            display: flex;
+        }
+
+        div:first-child{
+            flex: 2;
+        }
+
+        div > div{
+            flex: 1;
+            display: inline;
+            background-color: orange;
+            border: 1px solid wheat;
+        }
+
+    
+        </style>
+
+        <div>
+            <span>span</span>
+            <span>span</span>
+        </div>
+
+        <div class="flexable">
+            <div>div</div>
+            <div>div</div>
+            <div>div</div>
+            <div>div</div>
+        </div>
+
+    </body>
+</html>
